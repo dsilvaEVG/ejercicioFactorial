@@ -16,15 +16,15 @@
 			<td>NÚMERO</td><td>FACTORIAL</td>
 		</tr>
 <?php
-	require "funcion.php"; // Llamamos a la función
-	$factoriales = array(); // Creamos el array
+	require "funcion.php"; //Llamamos a la funcion
+	$factoriales = array();  //Creamos el array con el nombre factoriales
 
 	for ($i = 0; $i <= 10; $i++){
-		$factoriales[$i] = 	factorial($i); // Introducimos los factoriales dentro del array
+		$factoriales[$i] = 	factorial($i); //Recorremos las posiciones del array colocando el factorial que corresponde
 	}
 
 	for($i = 0; $i <= 10; $i++){
-		echo "<tr><td>$i</td><td> $factoriales[$i] </td></tr>"; // Volcamos el array en la tabla
+		echo "<tr><td>".$i. "</td><td>" .$factoriales[$i]. "</td></tr>"; //Imprimimos en la tabla los datos
 	}
 ?>
 
