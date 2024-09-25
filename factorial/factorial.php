@@ -16,7 +16,7 @@
 			<td>NÚMERO</td><td>FACTORIAL</td>
 		</tr>
 <?php
-	require "factorial.php"; // Llamamos a la función
+	require "funcion.php"; // Llamamos a la función
 	$factoriales = array(); // Creamos el array
 
 	for ($i = 0; $i <= 10; $i++){
